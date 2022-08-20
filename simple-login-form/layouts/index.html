@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple login form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="antialiased min-h-screen bg-gray-100 flex flex-col justify-center">
+    <div class="mx-auto">
+      <span class="text-2xl font-light">Login to your account</span>
+      <div class="mt-4 bg-white shadow-md rounded-lg">
+        <div class="h-2 bg-green-600 rounded-t-md"></div>
+        <div class="py-6 px-8">
+          <label class="form-control-label">Username or Email</label>
+          <input type="text" placeholder="Email" class="form-control" />
+          <label class="form-control-label mt-3">Password</label>
+          <input type="password" placeholder="Password" class="form-control" />
+          <div class="flex justify-between items-baseline gap-10">
+            <button type="submit" class="px-6 py-2 mt-4 text-white bg-green-600 rounded-lg">Login</button>
+            <a href="#" class="text-sm hover:underline">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
