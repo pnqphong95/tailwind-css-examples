@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  
+  .cover {
+    @apply hidden md:block md:w-1/3 lg:w-1/2 bg-no-repeat bg-cover bg-center;
+  }
+
+  .cover-signin {
+    background-image: url('https://images.pexels.com/photos/192933/pexels-photo-192933.jpeg?cs=srgb&dl=pexels-madison-inouye-192933.jpg&fm=jpg&w=5184&h=3456');
+  }
+
+  .cover-signup {
+    background-image: url('https://images.pexels.com/photos/2007350/pexels-photo-2007350.jpeg?cs=srgb&dl=pexels-dominika-roseclay-2007350.jpg&fm=jpg&w=3648&h=5472');
+  }
+
+  .form-container {
+    @apply bg-gray-50 min-h-screen w-full md:w-2/3 lg:w-1/2 flex justify-center items-center;
+  }
+
+  .form-input {
+    @apply rounded-md border-2 w-full px-2 py-2 text-sm outline-none;
+  }
+
+  .form-label {
+    @apply block;
+  }
+
+  .form-btn {
+    @apply w-full bg-orange-500 text-white py-2 rounded-md;
+  }
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS V3 Starter</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="flex antialiased">
+      <div class="form-container">
+        <div class="px-8 w-auto xl:w-1/2">
+          <div class="space-y-4">
+            <div>
+              <span class="text-sm text-gray-900">Welcome back</span>
+              <h1 class="text-2xl font-bold">Login to your account</h1>
+            </div>
+            <div>
+              <label class="form-label mb-2" for="email">Email</label>
+              <input class="form-input" type="email" name="email" placeholder="Enter your email" />
+            </div>
+            <div>
+              <div class="flex justify-between mb-2 items-baseline">
+                <label class="text-md" for="password">Password</label>
+                <a class="text-sm text-orange-600" href="#">Forgot password?</a>
+              </div>
+              <input class="form-input" type="password" name="password" placeholder="Enter password" />
+            </div>
+            <button class="form-btn">Login now</button>
+            <div class="w-full text-center">
+              <span class="text-sm">Not registered? </span>
+              <a class="text-sm text-orange-600" href="signup.html">Create account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cover cover-signin"></div>
+    </div>
+  </body>
+</html>
