@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .conversation-items {
+    @apply flex flex-col;
+
+    .conversation-item {
+      @apply py-3 px-3 flex justify-between items-center text-gray-500;
+
+      > .conversation-info {
+        @apply flex flex-wrap gap-x-3 items-center;
+
+        > .avatar {
+          @apply basis-12 flex-grow-0 flex-shrink-0;
+
+          > img {
+            @apply w-12 h-12 object-cover rounded-full ring-2 ring-gray-300;
+          }
+        }
+
+        > .conversation-summary {
+          
+          > .name {
+            @apply block leading-4 text-gray-700 text-base;
+          }
+
+          > .last-message {
+            @apply block text-sm whitespace-nowrap overflow-hidden text-ellipsis;
+          }
+        }
+      }
+
+      > .conversation-status {
+        @apply text-sm whitespace-nowrap;
+      }
+    }
+  }
+
+}
